@@ -1,0 +1,64 @@
+/* hero */
+.hero-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 800px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+@media only screen and (min-width: 1439px) {
+    .hero-section{
+        background-image: url("/img/hero/desk.png"); 
+        height: 820px;
+    } 
+}
+/* Game Overview */
+.game-section{
+    background-image: url("/img/game/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: contain;
+}
+.game-text{
+    margin-top: 280px;
+}
+.game-img-one{
+display: none;
+}
+.game-img-two{
+    display: none;
+}
+@media only screen and (min-width: 1439px) {
+    .game-section{
+        background-image: none;
+    } 
+.game-text{
+    margin-top: 34px;
+    width: 630px;
+    margin-left: 660px;
+}
+.game-img-one{
+    display: block;
+    margin-top: -114px;
+    width: 630px;
+        height: 420px;
+}
+.game-img-two{
+    display: block;
+    margin-left: 660px;
+    width: 630px;
+        height: 280px;
+    margin-top: -280px;
+}
+}
