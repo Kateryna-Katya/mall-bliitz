@@ -62,3 +62,244 @@ display: none;
     margin-top: -280px;
 }
 }
+/* Core Features */
+.core-title{
+    margin-bottom: 28px;
+}
+.custom-navigation{
+    display: none;
+}
+.core-swiper-slide{
+    cursor: pointer;
+    border-radius: 40px;
+        padding: 28px 22px;
+        min-height: 348px;
+        background: #badff8;
+}
+.core-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.core-subtitle{
+    font-family: "Fredoka", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #d3067b; 
+        margin-top: 8px;
+        margin-bottom: 14px; 
+}
+.core-text{
+    text-align: center;
+}
+@media only screen and (min-width: 1439px) {
+ .core-title{
+    margin-bottom: 36px;
+ }
+ .custom-navigation{
+    display: flex;
+    justify-content: center;
+        margin-top: 28px;
+        gap: 12px;
+ }
+ .custom-arrow {
+     background-color: inherit;
+     border: none;
+     cursor: pointer;
+ }
+
+ .custom-next {
+     transform: rotate(180deg);
+ }
+}
+/* How it works */
+.how-one-img{
+    display: none;
+}
+.how-two-img{
+    display: none;
+}
+.how-section{
+    background-image: url("/img/how/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: contain;
+}
+.how-list{
+    margin-top: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.how-item{
+    display: flex;
+    gap: 6px;
+    align-items: start;
+}
+.how-text{
+    font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #1d1d1f;
+        width: 293px;
+}
+@media only screen and (min-width: 1439px) {
+ .how-section{
+    background-image: none;
+ }
+ .how-title{
+    margin-bottom: 34px;
+ }
+ .how-wrapper{
+    display: flex;
+    gap: 20px;
+ justify-content: center;
+ align-items: center;
+ }
+ .how-one-img,
+ .how-two-img{
+    display: block;
+ }
+ .how-list{
+    width: 414px;
+        height: 350px;
+        margin-top: 0;
+ }
+ .how-text{
+width: 379px;
+ }
+}
+/* FAQ */
+.faq-section{
+    background-image: url("/img/faq/mob.png");
+        background-repeat: no-repeat;
+        background-position: top 110px center;
+        background-size: contain;
+}
+.faq-acc{
+    display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 335px;
+        margin: 550px auto 0;
+}
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+
+}
+
+.faq-acc-el-trigger {
+    border: none;
+    width: 335px;
+    height: auto;
+    background: inherit;
+    font-family: "Fredoka", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #badff8;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+ }
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    min-width: 48px;
+}
+
+.faq-img {
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    width: 335px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease,border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger {
+    border-bottom: none;
+
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    opacity: 1;
+    background: inherit;
+
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+     opacity: 1;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #1d1d1f;
+    text-align: left;
+   }
+
+   @media only screen and (min-width: 1439px) {
+    .faq-section{
+        background-image: url("/img/faq/desk.png");
+            background-repeat: no-repeat;
+            background-position: top 160px right 80px;
+            background-size: 542px 726px;
+}
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   width: 630px;
+    margin: 157px auto 0 0;
+}
+.faq-acc-el-trigger {
+    width: 630px;
+}
+.faq-acc-el-descr-frame {
+    width: 630px;
+   }
+}
+/* Gallery */
+.gallery-title{
+    margin-bottom: 28px;
+}
+.gallery-swiper-slide{
+    cursor: pointer;
+}
+.gallery-img{
+    width: 100%;
+    height: auto;
+}
+.gallery-container {
+    padding-bottom: 80px;
+}
+@media only screen and (min-width: 1439px) {
+ .gallery-title{
+    margin-bottom: 34px;
+ }
+ .gallery-container {
+     padding-bottom: 140px;
+ }
+}
